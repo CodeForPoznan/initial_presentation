@@ -1,6 +1,6 @@
 ## Presentation description
 
-Short presentation for Django Girls workshops in Poznań
+Short presentation for Django Girls workshops in Poznań.
 
 ## License
 
