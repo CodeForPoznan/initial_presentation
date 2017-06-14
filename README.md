@@ -4,6 +4,6 @@ Short presentation for Django Girls workshops in Poznań.
 
 ## License
 
-MIT licensed
+Presentation is licensed under [CC-BY-SA-3.0-PL](https://creativecommons.org/licenses/by-sa/3.0/pl/).
 
-Copyright (C) 2017 Hakim El Hattab, http://hakim.se
+Presentation based on [reveal.js](https://github.com/hakimel/reveal.js/). as an engine.
