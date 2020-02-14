@@ -1,0 +1,19 @@
+language: python
+
+env:
+  global:
+  - secure: okK5NRzHE8SDOaXPpjDnEJVtj08ZbIzytGjv4WhhtKbQ8IdY88r5lFxjoKc8xkAXHLTXiL2F5AhGiYnK2gq41w6L2M9VOAYniUoTbnwC720DmlTDn8rBCVriv4+8wbya+KyGaO/8mEqxAE+fqwHLxSnLkbwZMN6z5jRL0Su99tAHtT8X9X8SNVfFWI8Cz2/7a1jCSELonhSMzoZm+PcCC2k/wwTknT1Yu70zHU0bbICPRp/GCPhltWZBu/j1U1cpSuXysLXtAaU0n8fBe/jT3wSgw2grahFs0ra4+RO87baYCzR2cpj718iAnn75TJB3Nm1IEtWo1lq0OS2iSBDka8nCcwXFSizHEnxGOBV5HGRrwr4sZUfoa/0UN2w3J7ttIcCkIZiUiETY6/mZre/Hp6xVgCnnOnWHD+TPYEpU4qBY335X6SZyzSBn56IySXKc/7AZyZtrERiEf1c3ruWL1UHA56hLP6y3A2ZD0jPo8mFePRI1VvedRQAvVGhcS7tyTkYlNuv9CtfDul/nTiQl1xuThL2IUuQ+MvcEpSeIFHwUqWb8vg8i5qqLPR7ryyBZv+xgvUsEyqy23Og4PRcvM+KHiZvUpTb0mGQNggkilvYDyqtjlGUInQ/lSY3onEkWQLTpCNFu2MdXm5iYY3nNOTS5C4MQX/x8bhdfemyR0Ug=
+
+
+install:
+- pip install awscli==1.17.17
+
+script:
+- |
+  if [ "$TRAVIS_REPO_SLUG" == "CodeForPoznan/Presentations" ] &&
+     [ "$TRAVIS_BRANCH" == "master" ] &&
+     [ "$TRAVIS_PULL_REQUEST" = false ];
+  then
+    aws s3 sync . s3://codeforpoznan-public/Presentations/ --delete --exclude ".git/*"
+    aws cloudfront create-invalidation --distribution-id E36WEP14572AMJ --paths "/*"
+  fi
