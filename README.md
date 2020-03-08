@@ -1,6 +1,11 @@
 ## Presentation description
 
-Short presentation for Django Girls workshops in Poznań.
+Short presentation used for soft onboarding and meetings where Code for Poznań gets to be presented. 
+
+## Presentation access
+
+Presentation can be accessed via following URL:
+https://slides.codeforpoznan.pl/5minutes.html
 
 ## License
 
