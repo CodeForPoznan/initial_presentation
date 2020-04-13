@@ -4,13 +4,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <title>Code for Poznan</title>
+        <title>Code for Poznań</title>
 
+        <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/reveal.css">
         <link rel="stylesheet" href="css/theme/white.css">
 
         <!-- Theme used for syntax highlighting of code -->
-        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <link rel="stylesheet" href="lib/css/monokai.css">
 
         <!-- Printing and PDF exports -->
         <script>
@@ -30,45 +31,43 @@
                             <img src="img/code_for_poznan_square.png" style="background:none; border:none; box-shadow:none; "/>
                         </h1>
                     </section>
-                        <section>
+                    <section>
                         <h2>Misja</h2>
                         <p class="fragment">Technologiczne rozwiązania społecznych problemów</p>
-                        </section>
+                    </section>
                 </section>
                 <section>
                     <section>
                         <h1>Projekty</h1>
                     </section>
-                            <section>
-                                <img src="img/pah.png" style="background:none; border:none; box-shadow:none; "/>
-                                PAH FM
-                            </section>
-                            <section>
-                                <img src="img/alinka.png" style="background:none; border:none; box-shadow:none; "/>
-                                <a href="https://alinka.io/">https://alinka.io</a>
-                            </section>
-                            <section>
-                                <img src="img/volontulo.png" style="background:none; border:none; box-shadow:none; "/>
-                                <a href="https://dev.volontulo.pl/">https://dev.volontulo.pl/</a>
-                            </section>
-                            <section>
-                                <img src="img/streetmix.png" style="background:none; border:none; box-shadow:none; "/>
-                                <a href="https://streetmix.net">https://streetmix.net</a>
-                            </section>
+                    <section>
+                        <img src="img/pah.png" style="background:none; border:none; box-shadow:none; "/>
+                        PAH FM
+                    </section>
+                    <section>
+                        <img src="img/alinka.png" style="background:none; border:none; box-shadow:none; "/>
+                        <a href="https://alinka.io/">https://alinka.io</a>
+                    </section>
+                    <section>
+                        <img src="img/volontulo.png" style="background:none; border:none; box-shadow:none; "/>
+                        <a href="https://dev.volontulo.pl/">https://dev.volontulo.pl/</a>
+                    </section>
+                    <section>
+                        <img src="img/streetmix.png" style="background:none; border:none; box-shadow:none; "/>
+                        <a href="https://streetmix.net">https://streetmix.net</a>
                     </section>
                 </section>
                 <section>
                     <section>
                         <h1>Przyszłość</h1>
                     </section>
-                            <section>
-                                <img src="img/wysadz_ulice.png" style="background:none; border:none; box-shadow:none; "/>
-                                <a href="http://wysadzulice.pl">http://wysadzulice.pl</a>
-                            </section>
-                            <section>
-                                <img src="img/bank_empatii.png" style="background:none; border:none; box-shadow:none; "/>
-                                <a href="http://bankempatii.pl">http://bankempatii.pl</a>
-                            </section>
+                    <section>
+                        <img src="img/wysadz_ulice.png" style="background:none; border:none; box-shadow:none; "/>
+                        <a href="http://wysadzulice.pl">http://wysadzulice.pl</a>
+                    </section>
+                    <section>
+                        <img src="img/bank_empatii.png" style="background:none; border:none; box-shadow:none; "/>
+                        <a href="http://bankempatii.pl">http://bankempatii.pl</a>
                     </section>
                 </section>
                 <section>
@@ -99,7 +98,6 @@
             </div>
         </div>
 
-        <script src="lib/js/head.min.js"></script>
         <script src="js/reveal.js"></script>
 
         <script>
@@ -110,8 +108,8 @@
                 dependencies: [
                     { src: 'plugin/markdown/marked.js' },
                     { src: 'plugin/markdown/markdown.js' },
-                    { src: 'plugin/notes/notes.js', async: true },
-                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                    { src: 'plugin/highlight/highlight.js'},
+                    { src: 'plugin/notes/notes.js', async: true }
                 ]
             });
         </script>
