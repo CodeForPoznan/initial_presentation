@@ -5,7 +5,7 @@ Short presentation used for soft onboarding and meetings where Code for Poznań 
 ## Presentation access
 
 Presentation can be accessed via following URL:
-https://slides.codeforpoznan.pl/5minutes.html
+https://slides.codeforpoznan.pl/
 
 ## License
 
