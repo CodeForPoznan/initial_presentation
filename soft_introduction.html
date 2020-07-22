@@ -26,11 +26,26 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <section>
-                        <h1>
-                            <img src="img/code_for_poznan_square.png" style="background:none; border:none; box-shadow:none; "/>
-                        </h1>
-                    </section>
+                    <h1>
+                        <img src="img/code_for_poznan_square.png" style="background:none; border:none; box-shadow:none; "/>
+                    </h1>
+
+                    <aside class="notes">
+                        <p>W CfP zajmujemy się:</p>
+                        <ul>
+                            <li>rozwiązywaniem problemów społecznych za pomocą technologii</li>
+                            <li>Wspieramy głównie organizacje pozarządowe tworząc dla nich aplikacje, strony, wspomagamy je w digitalizacji procesów i danych</li>
+                        </ul>
+                        <p>Działamy od października 2016.</p>
+                        <p>W CfP pracuje obecnie kilka zespołów skupiających się różnych aspektach dostarczania oprogramowania:</p>
+                        <ul>
+                            <li>Developerzy</li>
+                            <li>Testerzy</li>
+                            <li>UX</li>
+                            <li>PMO</li>
+                        </ul>
+                        <p>Jesteśmy w trakcie dopinania formalności związanych z założeniem stowarzyszenia</p>
+                    </aside>
                 </section>
                 <section>
                     <h2>Agenda</h2>
@@ -42,114 +57,188 @@
                     </ul>
                 </section>
                 <section>
-                    <section>
-                        <h2>Misja</h2>
-                        <p class="fragment">Technologiczne rozwiązania społecznych problemów</p>
-                    </section>
+                    <h2>Misja</h2>
+                    <p class="fragment">Technologiczne rozwiązania społecznych problemów</p>
                 </section>
                 <section>
-                    <section>
-                        <h1>Projekty</h1>
-                    </section>
-                    <section>
-                        <img src="img/pah.png" style="background:none; border:none; box-shadow:none; "/>
-                        PAH FM
-                    </section>
-                    <section>
-                        <img src="img/alinka.png" style="background:none; border:none; box-shadow:none; "/>
-                        <a href="https://alinka.io/">https://alinka.io</a>
-                    </section>
-                    <section>
-                        <img src="img/watchdog.jpg" style="background:none; border:none; box-shadow:none; "/>
-                        <a href="https://siecobywatelska.pl/">https://siecobywatelska.pl/</a>
-                                                <img src="img/watchdog.jpg" style="background:none; border:none; box-shadow:none; "/>
-                        <a href="https://siecobywatelska.pl/">https://siecobywatelska.pl/</a>
+                    <h1>Projekty</h1>
+                </section>
+                <section>
+                    <img src="img/pah.png" style="background:none; border:none; box-shadow:none; "/>
+                    PAH FM
+                    <aside class="notes">
+                        <p>Aplikacja mobilna dla Polskiej Akcji Humanitarnej</p>
+                        <p>Zadania:</p>
+                        <ul>
+                            <li>zarządzanie flotą samochodową na misjach</li>
+                            <li>digitalizacja danych o przejazdach, potrzebnych są do rozliczenia
+                                kierowców:
+                                <ul>
+                                    <li>kilometraż</li>
+                                    <li>litry zatankowanego paliwa</li>
+                                    <li>projekt w którym rozliczony ma być przejazd</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>Dane te, do tej pory zbierane były w wersji papierowej.</p>
+                        <p>Wyzwanie:</p>
+                        <ul>
+                            <li>działanie offline</li>
+                        </ul>
+                        <p>Pilotaż:</p>
+                        <ul>
+                            <li>Ukraina</li>
+                            <li>Sudan Południowy</li>
+                            <li>Somalia</li>
+                        </ul>
+                        <p>Przyszłość:</p>
+                        <ul>
+                            <li>Jemen</li>
+                            <li>Irak</li>
+                        </ul>
+                        <p>Aplikacja działa obecnie w dwóch wersjach:</p>
+                        <ul>
+                            <li>Aplikacja dla kierowcy:
+                                <ul>
+                                    <li>zbieranie danych o pojedynczym przejeździe</li>
+                                    <li>przesyłanie danych do bazy danych w Django Adminie</li>
+                                </ul>
+                            <li>Aplikacja dla pasażera:</li>
+                                <ul>
+                                    <li>generowanie 6-cyfrowego tokenu - potwierdzenie/weryfikacja przejazdu</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>Aktualne prace skupiają się na:</p>
+                        <ul>
+                            <li>zbudowanie panelu do obsługi tankowań</li>
+                            <li>zbudowanie backendu do aplikacji pasażera</li>
+                        </ul>
+                        <p>Technologia:</p>
+                        <ul>
+                            <li>Django na serwerze</li>
+                            <li>Vue w przeglądarce</li>
+                            <li>Postgress SQL w bazie</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section>
+                    <img src="img/alinka.png" style="background:none; border:none; box-shadow:none; "/>
+                    <a href="https://alinka.io/">https://alinka.io</a>
+                </section>
+                <section>
+                    <img src="img/watchdog.jpg" style="background:none; border:none; box-shadow:none; "/>
+                    <a href="https://siecobywatelska.pl/">https://siecobywatelska.pl/</a>
 
-			            <aside class="notes">
-			                <p>Sieć obywatelska WATCHDOG Polska to stowarzyszenie które działa już od 2003 roku.                            
-			Stoją na straży prawa do informacji publicznej w naszym kraju. Informacja to jedno z praw obywatela, które daje prawidzwą wolność w wyrażaniu swoich opinii i chroni nas przed nadużyciami wadzy.
-			Wachtdog to taki pies, tylko że zamiast szczekać- pyta, a jak  mu się coś nie spodoba to zamiast gryźć- idzie do sądu.
-			Nasze instytucje publiczne działąja na zasadach nawyków, czyli prawo sobie a zwyczaj sobie. Zależy nam aby przełamać te nieprawidłowo utarte schematy.
-			Pytania kierowane są do urzędów, samorządów, gmin, administracji, szpitali itp. Jawność i transparentność organizacji będzię zawsze działała na korzyść społeczeństwa.
-			Dodatkowo gromadzą, analizują i prezentują przydatną wiedzę na swoich portalach i w mediach. A na koniec edukują społeczeństwo o prawach,
-			uczą jak monitorować i docierać do wiedzy oraz danych w określonym obszarze.</p>
-			
-			<p>Aplikacja służy do usprawnienia obiegu dokumentów Stowarzyszenia, w szczególności w zakresie obiegu korespondencji spraw sądowych oraz archiwizacji dokumentacji.</p>
-			
-            <p>w przyszłości system będzie służył także do:</p>
-			<ul>
-                <li>zarządzanie przebiegiem procesu sporządzenia pism</li>
-			    <li>powiadamiania o nowych pismach</li>
-			    <li>kontroli terminów</li>
-			    <li>wysyłkę pism poprzez odpowiednie kolejki:</li>
-				<ul>
-                    <li>Envelo- realizowane automatycznie</li>
-				    <li>ePUAP - realizowane manualnie przez osoby uprawnione, a następnie automatycznie</li>
-                    <li>Poczta tradycyjna - realizowane manualnie przez osoby uprawnione</li>
-                    <li>publikacja danych z systemu odbywać się będzie poprzez API</li>
-                </ul>
-            </ul>
-						
-            <p>Architektua:</p>
-			<ul>
-                <li>Back-end - Django</li>
-			    <li>Front-end - React / Ant design Pro</li>
-			    <li>Minio - podsystem składowania plików binarnych (dokumenty, zdjęcia itp.)</li>
-			    <li>Baza danych w PostgreSQL</li>
-			    <li>korzystamy z dokerów</li>
-            </ul>
-                        </aside>
-                    </section>
-                    <section>
-                        <img src="img/StronaSpolecznosci.png" style="background:none; border:none; box-shadow:none; "/>
-                        <a href="https://codeforpoznan.pl/">https://codeforpoznan.pl/</a>
-                    </section>
+                    <aside class="notes">
+                        <p>
+                            Sieć obywatelska WATCHDOG Polska to stowarzyszenie które działa już od 2003 roku.
+                            Stoją na straży prawa do informacji publicznej w naszym kraju. Informacja to jedno z praw obywatela, które daje prawidzwą wolność w wyrażaniu swoich opinii i chroni nas przed nadużyciami wadzy.
+                            Wachtdog to taki pies, tylko że zamiast szczekać- pyta, a jak  mu się coś nie spodoba to zamiast gryźć- idzie do sądu.
+                            Nasze instytucje publiczne działąja na zasadach nawyków, czyli prawo sobie a zwyczaj sobie. Zależy nam aby przełamać te nieprawidłowo utarte schematy.
+                            Pytania kierowane są do urzędów, samorządów, gmin, administracji, szpitali itp. Jawność i transparentność organizacji będzię zawsze działała na korzyść społeczeństwa.
+                            Dodatkowo gromadzą, analizują i prezentują przydatną wiedzę na swoich portalach i w mediach. A na koniec edukują społeczeństwo o prawach, uczą jak monitorować i docierać do wiedzy oraz danych w określonym obszarze.
+                        </p>
+                        <p>
+                            Aplikacja służy do usprawnienia obiegu dokumentów Stowarzyszenia, w szczególności w zakresie obiegu korespondencji spraw sądowych oraz archiwizacji dokumentacji.
+                        </p>
+                        <p>
+                            w przyszłości system będzie służył także do:
+                        </p>
+
+                        <ul>
+                            <li>zarządzanie przebiegiem procesu sporządzenia pism</li>
+                            <li>powiadamiania o nowych pismach</li>
+                            <li>kontroli terminów</li>
+                            <li>wysyłkę pism poprzez odpowiednie kolejki:</li>
+                            <ul>
+                                <li>Envelo- realizowane automatycznie</li>
+                                <li>ePUAP - realizowane manualnie przez osoby uprawnione, a następnie automatycznie</li>
+                                <li>Poczta tradycyjna - realizowane manualnie przez osoby uprawnione</li>
+                                <li>publikacja danych z systemu odbywać się będzie poprzez API</li>
+                            </ul>
+                        </ul>
+                        <p>Architektua:</p>
+                        <ul>
+                            <li>Back-end - Django</li>
+                            <li>Front-end - React / Ant design Pro</li>
+                            <li>Minio - podsystem składowania plików binarnych (dokumenty, zdjęcia itp.)</li>
+                            <li>Baza danych w PostgreSQL</li>
+                            <li>korzystamy z dokerów</li>
+                        </ul>
+                    </aside>
+
                 </section>
                 <section>
-                    <section>
-                        <h1>Przyszłość</h1>
-                    </section>
-                    <section>
-                        <img src="img/volontulo.png" style="background:none; border:none; box-shadow:none; "/>
-                        <a href="https://dev.volontulo.pl/">https://dev.volontulo.pl/</a>
-                    </section>
-                    <section>
-                        <img src="img/wysadz_ulice.png" style="background:none; border:none; box-shadow:none; "/>
-                        <a href="http://wysadzulice.pl">http://wysadzulice.pl</a>
-                    </section>
-                    <section>
-                        <img src="img/bank_empatii.png" style="background:none; border:none; box-shadow:none; "/>
-                        <a href="http://bankempatii.pl">http://bankempatii.pl</a>
-                    </section>
+                    <img src="img/StronaSpolecznosci.png" style="background:none; border:none; box-shadow:none; "/>
+                    <a href="https://codeforpoznan.pl/">https://codeforpoznan.pl/</a>
                 </section>
                 <section>
-                    <section>
-                        <h1>WORKFLOW</h1>
-                    </section>
-                    <section>
-                        <img src="img/scrum.png"  style="background:none; border:none; box-shadow:none; ">
-                    </section>
-                    <section>
-                        <img src="img/zenhub.png"  style="background:none; border:none; box-shadow:none; ">
-                    </section>
+                    <h1>Przyszłość</h1>
                 </section>
                 <section>
-                    <section>
-                        <h1>Kiedy? Gdzie?</h1>
-                    </section>
-                    <section>
-                        <img src="img/spotkanie.jpg"  style="background:none; border:none; box-shadow:none; ">
-                    </section>
-                    <section>
-                        <img src="img/spotkanie_2.jpg"  style="background:none; border:none; box-shadow:none; ">
-                    </section>
-                    <section>
-                        <h2>Spotkania</h2>
-                        <p class="fragment">Każda środa</p>
-                        <p class="fragment">Godzina 18:00</p>
-                        <p class="fragment">STX Next</p>
-                        <p class="fragment">Mostowa 38</p>
-                    </section>
+                    <img src="img/volontulo.png" style="background:none; border:none; box-shadow:none; "/>
+                    <a href="https://dev.volontulo.pl/">https://dev.volontulo.pl/</a>
+
+                    <aside class="notes">
+                        <p>Projekt zamrożony.</p>
+                        <p>Przerwany z powodu braku zainteresowania dalszym rozwojem aplikacji i responsywności klienta</p>
+                        <p>Powstał dla WRK (Poznańskie Centrum Wspierania Organizacji Pozarządowych i Wolontariatu/WRK)</p>
+                        <p>Opis:</p>
+                        <ul>
+                            <li>Market space dla wolontariuszy i organizacji, które wolontariuszy poszukują.</li>
+                            <li>Działa na zasadzie pracuj.pl - organizacje wrzucają ogłoszenia z opisem wolontariatu, wolontariusze znajdują dzięki stronie odpowiednie dla siebie miejsce.</li>
+                        </ul>
+                        <p>Strona może zostać wykorzystana jako baza/szkielet dla innego projektu.</p>
+                        <p>Można poszukać też innego klienta zainteresowanego technologią.</p>
+                        <p>Technologia:</p>
+                        <ul>
+                            <li>Frontend - Angular</li>
+                            <li>Backend - Django</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section>
+                    <img src="img/wysadz_ulice.png" style="background:none; border:none; box-shadow:none; "/>
+                    <a href="http://wysadzulice.pl">http://wysadzulice.pl</a>
+                </section>
+                <section>
+                    <img src="img/bank_empatii.png" style="background:none; border:none; box-shadow:none; "/>
+                    <a href="http://bankempatii.pl">http://bankempatii.pl</a>
+
+                    <aside class="notes">
+                        <ul>
+                            <li>Strona powstała 4 lata temu w celu rozpowszechnienia kwestii dawstwa szpiku kostnego.</li>
+                            <li>W tym przypadku chodziło o znalezienie dawcy dla Patrycji.</li>
+                            <li>Strona jest prostym landing pagem</li>
+                        </ul>
+                    </aside>
+
+                </section>
+                <section>
+                    <h1>WORKFLOW</h1>
+                </section>
+                <section>
+                    <img src="img/scrum.png"  style="background:none; border:none; box-shadow:none; ">
+                </section>
+                <section>
+                    <img src="img/zenhub.png"  style="background:none; border:none; box-shadow:none; ">
+                </section>
+                <section>
+                    <h1>Kiedy? Gdzie?</h1>
+                </section>
+                <section>
+                    <img src="img/spotkanie.jpg"  style="background:none; border:none; box-shadow:none; ">
+                </section>
+                <section>
+                    <img src="img/spotkanie_2.jpg"  style="background:none; border:none; box-shadow:none; ">
+                </section>
+                <section>
+                    <h2>Spotkania</h2>
+                    <p class="fragment">Każda środa</p>
+                    <p class="fragment">Godzina 18:00</p>
+                    <p class="fragment">STX Next</p>
+                    <p class="fragment">Mostowa 38</p>
                 </section>
                 <section>
                     <h1>Pytania?</h1>
